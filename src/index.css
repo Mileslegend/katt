@@ -38,7 +38,7 @@
 
 html, body{
   min-height: 100vh;
-  font-size: 'Sora', 'sans-serrif';
+  font-family: 'Sora', 'sans-serrif';
   color: var(--color-text);
   scroll-behavior: smooth;
   overscroll-behavior: contain;
