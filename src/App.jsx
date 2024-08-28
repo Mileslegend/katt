@@ -2,7 +2,7 @@ function App() {
 
   return (
     <>
-     <h1>This is solarix</h1>
+     <h1 style={{color: 'white'}} >This is KatsmoSafaris</h1>
     </>
   )
 }
