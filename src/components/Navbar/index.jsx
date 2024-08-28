@@ -1,13 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import { navTabs } from '../../data'
 import { Link } from 'react-scroll'
 import { RiMenu3Fill } from 'react-icons/ri'
+import Logo from '../Logo'
+import { FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false)
+
   return (
     <nav className='navbar'>
-        <div className="box">
+        {
+            open ? (
+                <div className="sidebar__overlay" onClick={() => setOpen(!open) }> 
+
+                </div>
+            ) : ''
+        }
+        <Logo />
+        <div className={ `box nav__tabs ${open ? 'visible' : ''}`}>
+            <div className="icon__container cancel__btn" onClick={() => setOpen(!open) }>
+                <FaTimes />
+            </div>
             {
                 navTabs.map((tab, index) => (
                     <Link 
@@ -18,6 +33,7 @@ const Navbar = () => {
                     smooth={true}
                     spy={true}
                     offset={-70}
+                    onClick={() => setOpen(!open) }
                     >
                     {tab.name}
                     </Link>
@@ -28,10 +44,11 @@ const Navbar = () => {
             <Link
             to='contact'
             className='btn contact__btn'
-            >
-            Get Started
+            >Get Started
             </Link>
-            <div className="icon__container menu__btn">
+            <div className="icon__container menu__btn"
+            onClick={() => setOpen(!open) }
+            >
                 <RiMenu3Fill />
             </div>
         </div>
