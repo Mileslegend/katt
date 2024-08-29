@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import { navTabs } from '../../data'
 import { Link } from 'react-scroll'
@@ -7,10 +7,25 @@ import Logo from '../Logo'
 import { FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+    const [activeNavbar, setActiveNavbar] = useState(false);
+
+    const handleScroll = () => {
+        const currentScrollPos = window.scrollY;
+        if(currentScrollPos > 50) {
+            setActiveNavbar(true);
+        } else {
+            setActiveNavbar(false);
+        }
+    } 
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll',handleScroll)
+    }, [])
 
   return (
-    <nav className='navbar'>
+    <nav className={`navbar ${activeNavbar ? 'active' : ''}`}>
         {
             open ? (
                 <div className="sidebar__overlay" onClick={() => setOpen(!open) }> 
