@@ -1,0 +1,26 @@
+#testimonial .title{
+    text-align: center;
+}
+
+#testimonial .clients__container{
+    margin-top: 50px;
+}
+
+#testimonial .slick-prev, #testimonial .slick-next{
+    display: none !important;
+}
+
+#testimonial .slick-track{
+    display: flex !important;
+    gap: 20px;
+}
+
+#testimonial .slick-slide{
+    height: inherit !important;
+    padding: 20px;
+    border: solid 2px var(--color-primary);
+    border-radius: var(--radius-3);
+    display: flex;
+    flex-direction: column;
+    background: var(--color-ui-secondary);
+}

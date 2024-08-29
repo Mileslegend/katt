@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import Project from "./components/Project"
 import Services from "./components/Services"
 import Teams from "./components/Teams"
+import Testimonial from "./components/Testimonial"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
      <Services />
      <Teams />
      <Project />
+     <Testimonial />
     </>
   )
 }

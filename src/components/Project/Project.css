@@ -34,3 +34,32 @@
 #project .project__card .buttons{
     margin: 40px 0 20px 0;
 }
+
+#project .project__card .zoom__in{
+    animation: zoomIn 600ms ease;
+}
+
+/* animation */
+@keyframes zoomIn{
+    0% {
+        scale: 0.5%;
+    }
+    100% {
+        scale: 1
+    }
+}
+
+/* Media responsiveness */
+@media (maw-width: 1000px){
+    #project .project__container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.2rem;
+    }
+}
+
+@media (maw-width: 600px){
+    #project .project__container{
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
+}

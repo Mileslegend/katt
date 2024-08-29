@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Project.css";
 import { projects } from "../../data";
 import ProjectNavigation from "./ProjectNavigation";
+import { PiSelectionAllFill } from "react-icons/pi";
 
 const Project = () => {
 
   const [activeProjects, setActiveProjects] = useState(projects);
+  const [load, setLoad] = useState(false);
+
+  useEffect(() => {
+    setLoad(true);
+    setTimeout(() => {
+      setLoad(false);
+    }, 600)
+  }, [activeProjects])
   
   const getTabs = () => {
     const tabs = ['All'];
@@ -37,7 +46,7 @@ const Project = () => {
         />
         <div className="projects__container">
           {activeProjects.map((project, index) => (
-            <div className="project__card" key={index}>
+            <div className={`project__card ${load ? 'zoom__in' : '' }`} key={index}>
               <div className="image__container">
                 <img src={project.image} alt={project.title} />
               </div>
