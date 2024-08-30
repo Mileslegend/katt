@@ -27,7 +27,7 @@ const Teams = () => {
                             {
                                 team.social.map((item,i) => (
                                     <Link 
-                                    href={item.url || ''} 
+                                    to={item.url || '/'} 
                                     target='_blank' 
                                     className='icon__container' 
                                     key={i}>

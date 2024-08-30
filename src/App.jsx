@@ -1,5 +1,6 @@
 import About from "./components/About"
 import Achievement from "./components/Achievement"
+import Faq from "./components/Faq"
 import Header from "./components/Header"
 import Navbar from "./components/Navbar"
 import Project from "./components/Project"
@@ -19,6 +20,7 @@ function App() {
      <Teams />
      <Project />
      <Testimonial />
+     <Faq />
     </>
   )
 }

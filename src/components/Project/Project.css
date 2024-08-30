@@ -51,14 +51,14 @@
 
 /* Media responsiveness */
 @media (maw-width: 1000px){
-    #project .project__container{
+    #project .projects__container{
         grid-template-columns: repeat(2,1fr);
         gap: 1.2rem;
     }
 }
 
-@media (maw-width: 600px){
-    #project .project__container{
+@media (max-width: 600px) {
+    #project .projects__container {
         grid-template-columns: 100%;
         gap: 1rem;
     }
