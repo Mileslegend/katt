@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Project.css";
 import { projects } from "../../data";
 import ProjectNavigation from "./ProjectNavigation";
-import { PiSelectionAllFill } from "react-icons/pi";
 
 const Project = () => {
 
