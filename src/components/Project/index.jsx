@@ -39,6 +39,9 @@ const Project = () => {
         <h1 className="title">
           Our <span className="g-text">Tours</span>
         </h1>
+        <h3 className="sub__title text__muted">  
+        Embark on an unforgettable journey through Uganda's most captivating destinations with our premier tours and car hire services. From the lush landscapes of Bwindi Impenetrable Forest, renowned for its gorilla trekking experiences, to the breathtaking views of Murchison Falls National Park, our tailored tours offer immersive adventures into the heart of Africa's natural beauty.
+        </h3>
         <ProjectNavigation 
         tabs={getTabs()}
         onChange={setProjects}

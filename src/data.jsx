@@ -229,31 +229,25 @@ export const faq = [
 export const testimonial = [
   {
     image:profile2,
-    name:'Samuel Eze',
-    review:`Our experience with this tourism service was exceptional! 
-    From the knowledgeable guides to the seamless itinerary, every detail was perfect. 
-    We created unforgettable memories and can’t
-     wait to book our next adventure with them. Highly recommended!`
+    name:'Mwesigwa Rahims',
+    review:`Been there in April 2024 and really enjoyed the good experience from step A to z it's really amazing thanks for the great and professional service 👏 I can't wait to join you in December this year again see you soon.`
   },
   {
     image:profile3,
-    name:'Emmanuel Joseph',
-    review:`The best tourism experience we've ever had. Friendly staff, 
-    great value, and unforgettable memories. 5 stars!`
+    name:'Katwalo Moses',
+    review:`Good memories are created by expertise team get that with Katsmo safaris Uganda where safety and care is a must not optional.`
   },
   {
     image:profile4,
-    name:'Gloria Chiwendu',
-    review:`What an incredible journey! This tourism service made our trip unforgettable. 
-    The personalized attention and expert guidance transformed our vacation 
-    into a dream come true. We felt valued every step of the way.
-     Highly recommend for anyone seeking adventure!`
+    name:'Maciej Makowski',
+    review:`I highly recommend the company and the owner, very good services, the best price in Uganda, every day with a big smile, greetings and goodbye, Mose ist the best!!!!
+Maciek 🙂
+Polecam Mose wszystkim polakom, mily skromny i bardzo sympatyczny, sprawi ,że Wasze wakację w Ugandzie będą niezapomniane 💪👌`
   },
   {
     image:profile5,
-    name:'Precious Stone',
-    review:`Seamless planning, outstanding guides, and incredible experiences. 
-    We'll definitely be booking with them again!`
+    name:'Jhosue Camacho',
+    review:`Excelente experiencia con Moses, me encantó que me ayudó en todo momento, me facilitaba todo lo que necesitaba, me sentí muy cuidado y apoyado. Lo recomiendo ampliamente, es muy profesional y muy puntual.`
   }
 
 ];

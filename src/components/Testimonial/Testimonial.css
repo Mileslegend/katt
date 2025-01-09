@@ -57,3 +57,14 @@
     background: var(--color-primary);
     border-radius: var(--radius-3);
 }
+
+#testimonial .review-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* or a specific height */
+    width: 25%; /* or a specific width */
+    justify-items: center;
+    margin: auto;
+  }
